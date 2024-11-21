@@ -1,0 +1,44 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "tokenAddress", "type": "address" },
+      { "name": "amount", "type": "uint256" }
+    ],
+    "name": "lend",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "collateralAddress", "type": "address" },
+      { "name": "amount", "type": "uint256" }
+    ],
+    "name": "borrow",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "user", "type": "address" }],
+    "name": "getLendingBalance",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [{ "name": "user", "type": "address" }],
+    "name": "getBorrowingBalance",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
